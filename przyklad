@@ -1,0 +1,26 @@
+
+#include <iostream>
+#include <conio.h>
+#include <cmath>
+
+
+using namespace std;
+
+int main(){
+        int N,d,a;
+        d = 2;
+
+        cout <<"Wprowadz d: " ;
+        cin >> N;
+
+        while (N >= d){
+            if (N % d == 0){
+                cout << d << endl;
+                N = N / d;
+            } else{
+                d = d + 1;
+            }
+
+        }
+    getch();
+}
